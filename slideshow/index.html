@@ -10,10 +10,24 @@
 </head>
 <body>
   <header class="header">
-    <p>チーム運営</p>
+    <div class="header__inner">
+      <p>チーム運営</p>
+
+      <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+          <li class="nav-items__item"><a href="slideshow/index.html">🍣チーム紹介🍣</a></li>
+          <li class="nav-items__item"><a href="janken/index.html">👾ゲーム👾</a></li>
+        </ul>
+      </nav>
+      
+      <button class="header__hamburger hamburger active" id="js-hamburger">
+        <img class="header__hamburger__icon" src="hamburger_icon.svg" alt="">
+      </button>
+    </div>
   </header>
   <section>
     <!-- スライドショー -->
   </section>
+  <script src="main.js"></script>
 </body>
 </html>
