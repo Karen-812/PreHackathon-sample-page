@@ -1,32 +1,68 @@
+.janken-game {
+  padding-top: 64px;
+}
+
+.Hands__img {
+  display: flex;
+  justify-content: center;
+}
+.Hands__img-wrapper {
+  width: 100px;
+  height: auto;
+}
+.Hands__img-size {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
 .Hands__list {
   display: flex;
   justify-content: center;
 }
 .Hands__list-item {
   border: solid;
-  border-radius: 100px;
-  padding: 50px;
+  padding: 20px;
 }
 .Hands__list__player {
   cursor: pointer;
 }
 
+.opponent-hand__img {
+  transform: rotate(180deg);
+}
+
 .Hands__list-item__opponent-hand {
-  background-color: aqua;
+  background-color: rgb(194, 219, 219);
 }
 
 .Hands__list-item__player-hand {
-  background-color: palegreen;
+  background-color: rgb(194, 219, 219);
 }
 
 .Result {
-  padding: 30px;
-  font-size: 30px;
-  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.Result__img {
+  width: 200px;
+  height: auto;
+}
+.Result__img-ballon {
+  position: absolute;
+  top: 0;
+}
+.Result__text {
+  position: absolute;
+  top: 12vh;
+  left: 17vw;
+  width: 200px;
+  height: 15px;
 }
 
 .me_you {
-  color: #26A69A;
+  color: #26a69a;
   font-size: 30px;
   text-align: center;
 }
@@ -37,5 +73,9 @@
 
 .me {
   margin: 30px;
+}
+
+.show {
+  opacity: 1;
 }
 /*# sourceMappingURL=janken.css.map */
