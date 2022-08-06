@@ -12,24 +12,13 @@ function ChooseHand(playerHand) {
   let player = document.getElementById(`player_${playerHand}`);
   player.classList.add("Hands__list-item__player-hand");
 
-
-  let result = null;
-  function win(){
-    result = "君の勝ち！"
-  }
-
   if (playerHand === randomNumber) {
     result = "あいこ"
-  } else if (playerHand === 0 && randomNumber === 1) {
-    win();
-  } else if (playerHand === 1 && randomNumber === 2) {
-    win();
-  } else if (playerHand === 2 && randomNumber === 0) {
-    win();
+  } else if (playerHand === 0 && randomNumber === 1 || playerHand === 1 && randomNumber === 2 || playerHand === 2 && randomNumber === 0) {
+    result = "君の勝ち！"
   } else {
     result = "お前の負けm9(^Д^)"
   }
-
   
   document.getElementById("jankenGame").style.pointerEvents = "none";
   

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,11 @@
   <title>事前企画サンプルコード</title>
   <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/style.min.css">
+  <link rel="stylesheet" href="./style/slideshow.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
 </head>
+
 <body>
   <header class="header">
     <div class="header__inner">
@@ -20,15 +25,33 @@
           <li class="nav-items__item"><a href="../mogura/index.html">👾ゲーム２👾</a></li>
         </ul>
       </nav>
-      
+
       <button class="header__hamburger hamburger active" id="js-hamburger">
         <img class="header__hamburger__icon" src="../hamburger_icon.svg" alt="">
       </button>
     </div>
   </header>
-  <section>
+  <section class="main">
     <!-- スライドショー -->
+    <!-- 参考サイト https://kiomiru.co.jp/blog/coding/swiper-js/ -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- スライド -->
+        <div class="swiper-slide"><img src="./pictures/3rd_mtg.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./pictures/3rd_mtg.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./pictures/3rd_mtg.jpg" alt=""></div>
+        
+      </div>
+      <!-- ページネーション -->
+      <div class="swiper-pagination"></div>
+      <!-- 次・前ボタン -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </section>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="../main.js"></script>
+  <script src="./slideshow.js"></script>
 </body>
+
 </html>
