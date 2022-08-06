@@ -1,0 +1,41 @@
+.Hands__list{
+  display: flex;
+  justify-content: center;
+  &-item{
+    border: solid;
+    border-radius: 100px;
+    padding: 50px;
+  }
+  &__player{
+    cursor: pointer;
+  }
+}
+
+.Hands__list-item__opponent-hand{
+  background-color: aqua;
+}
+
+.Hands__list-item__player-hand{
+  background-color: palegreen;
+}
+
+.Result{
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.me_you{
+  color: #26A69A;
+  font-size: 30px;
+  text-align: center;
+}
+
+.you{
+  margin: 30px;
+}
+
+.me{
+  margin: 30px;
+}
+
