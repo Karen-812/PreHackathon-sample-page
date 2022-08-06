@@ -10,26 +10,17 @@
   right: 0;
   z-index: 999;
 }
-
 .header__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: inherit;
   position: relative;
 }
-
 .header p {
   font-size: 1.5rem;
   margin-left: 1rem;
 }
-
 .header__nav {
   position: absolute;
   right: 0;
@@ -37,54 +28,39 @@
   top: 0;
   width: 100%;
   height: 100vh;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  background-color: #fff;
-  /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
-  -webkit-transition: ease 0.4s;
-  transition: ease 0.4s;
-  /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
+  transform: translateX(100%);
+  background-color: #fff; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+  transition: ease 0.4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
 }
-
 .header__nav.active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
-
 .header .nav__items {
-  padding: 30% 20%;
+  padding: 20% 20% 0 20%;
 }
-
 .header .nav-items {
   text-align: center;
 }
-
 .header .nav-items__item a {
   font-size: 1.5rem;
   margin-top: 5%;
   display: block;
 }
-
 .header__hamburger {
   width: 48px;
   height: 100%;
   margin-right: 1rem;
 }
-
 .header__hamburger__icon {
   width: 100%;
 }
-
 .header .hamburger {
-  background-color: transparent;
-  /*buttonタグデフォルトスタイルを打ち消し*/
-  border-color: transparent;
-  /*buttonタグデフォルトスタイルを打ち消し*/
+  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
+  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
   z-index: 9999;
 }
 
 .header {
   height: 64px;
   border-bottom: solid;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
