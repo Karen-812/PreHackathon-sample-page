@@ -52,7 +52,7 @@
 }
 
 .header .nav__items {
-  padding: 30% 20%;
+  padding: 20% 20% 0 20%;
 }
 
 .header .nav-items {
@@ -81,6 +81,162 @@
   border-color: transparent;
   /*buttonタグデフォルトスタイルを打ち消し*/
   z-index: 9999;
+}
+
+/* common */
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.hidden2 {
+  display: none;
+}
+
+.mogura_section {
+  margin-top: 150px;
+}
+
+/* modal */
+.game_section {
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.game_section h1 {
+  margin: 5px;
+}
+
+.game_section p {
+  margin: 0;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game_section span {
+  font-size: 50px;
+}
+
+.game_section .button {
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 30px auto;
+  cursor: url(../mogura/hammer.png), auto;
+}
+
+/* header */
+.main .main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 10px 5px;
+  font-size: 18px;
+}
+
+.main .main_header h2 {
+  margin: 0;
+}
+
+.main .main_header .score {
+  margin: 0 0 0 auto;
+}
+
+/* main */
+.main {
+  width: 530px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: url(../mogura/hammer.png), auto;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table td {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.visible {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  background: pink;
+}
+
+.visible2 {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  background: #6091d3;
+}
+
+.visible3 {
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  background: #222324;
+}
+
+.visible:hover,
+.visible2:hover,
+.visible3:hover {
+  opacity: 0.5;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  .main {
+    width: 350px;
+  }
+  table td {
+    width: 65px;
+    height: 65px;
+  }
 }
 
 .header {

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>事前企画サンプルコード</title>
   <link rel="stylesheet" href="../style/reset.css">
-  <link rel="stylesheet" href="../style/style.min.css">
+  <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
   <header class="header">
@@ -26,9 +26,29 @@
       </button>
     </div>
   </header>
-  <section>
+  <section class="mogura_section">
     <!-- モグラ叩き -->
+    <div id="modal" class="modal">
+      <section class="game_section">
+          <h1>Whack-A-Mole</h1>
+          <p><span style="color: pink;">■</span>+2　Point</p>
+          <p><span style="color: #6091d3;">■</span>+1　Point</p>
+          <p><span style="color: #222324;">■</span>-1　Point</p>
+          <div class="button">GAME START</div>
+      </section>
+    </div>
+    
+    <div id="main" class=" ">
+        <div id="main_header" class="hidden2">
+            <h2>START</h2>
+            <h2 class="score">SCORE: 0</h2>
+        </div>
+        <main>
+            <table></table>
+        </main>
+    </div>
   </section>
   <script src="../main.js"></script>
+  <script src="mogura.js"></script>
 </body>
 </html>
