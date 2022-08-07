@@ -1,5 +1,9 @@
 .main{
-  margin-top: 80px;
+  margin-top: 0;
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .swiper--wrapper {
@@ -22,5 +26,3 @@
     width: 85%;
   }
 }
-
-
