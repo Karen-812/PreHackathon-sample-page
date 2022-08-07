@@ -32,8 +32,11 @@ function ChooseHand(playerHand) {
 // 一度じゃんけんをしたらリロードしないと押せなくする
   document.getElementById("jankenGame").style.pointerEvents = "none";
 
-  let jankenresult = document.getElementById("jankenresult");
-  jankenresult.insertAdjacentHTML("beforeend", result);
+  let jankenresultPC = document.getElementById("jankenresultPC");
+  jankenresultPC.insertAdjacentHTML("beforeend", result);
+  let jankenresultSP = document.getElementById("jankenresultSP");
+  jankenresultSP.insertAdjacentHTML("beforeend", result);
+
 }
 // リロードボタン
 const reloadBtn = document.getElementById("reloadBtn");

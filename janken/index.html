@@ -30,64 +30,70 @@
       </button>
     </div>
   </header>
-
-  <section class="janken-game" id="jankenGame">
-    <!-- 相手の手 -->
-    <div class="you">
-      <h1 class="me_you">あいて</h1>
-      <ul class="Hands__list">
-        <li class="Hands__list-item" id="opponent_0">ぐー</li>
-        <li class="Hands__list-item" id="opponent_1">ちょき</li>
-        <li class="Hands__list-item" id="opponent_2">ぱー</li>
-      </ul>
-      <!-- 相手の手の画像 -->
-      <ul class="Hands__img">
-        <li class="Hands__img-wrapper">
-          <img class="Hands__img-size opponent-hand__img" id="opponent_hand_img_0" src="./image/rock.png" alt="">
-        </li>
-        <li class="Hands__img-wrapper">
-          <img class="Hands__img-size opponent-hand__img" id="opponent_hand_img_1" src="./image/tyoki.png" alt="">
-        </li>
-        <li class="Hands__img-wrapper">
-          <img class="Hands__img-size opponent-hand__img" id="opponent_hand_img_2" src="./image/paper.png" alt="">
-        </li>
-      </ul>
-    </div>
-    <!-- 自分の手 -->
-    <div class="me">
-      <!-- 自分の手の画像 -->
-      <ul class="Hands__list Hands__list__player">
-        <li class="Hands__img-wrapper" onclick="ChooseHand(0)">
-          <img class="Hands__img-size" id="player_hand_img_0" src="./image/rock.png" alt="">
-        </li>
-        <li class="Hands__img-wrapper" onclick="ChooseHand(1)">
-          <img class="Hands__img-size" id="player_hand_img_1" src="./image/tyoki.png" alt="">
-        </li>
-        <li class="Hands__img-wrapper" onclick="ChooseHand(2)">
-          <img class="Hands__img-size" id="player_hand_img_2" src="./image/paper.png" alt="">
-        </li>
-      </ul>
-      <ul class="Hands__list Hands__list__player">
-        <li class="Hands__list-item" id="player_0" onclick="ChooseHand(0)">ぐーを出す</li>
-        <li class="Hands__list-item" id="player_1" onclick="ChooseHand(1)">ちょきを出す</li>
-        <li class="Hands__list-item" id="player_2" onclick="ChooseHand(2)">ぱーを出す</li>
-      </ul>
-      <h1 class="me_you">自分</h1>
-    </div>
+  <div class="wrapper">
     <!-- 結果表示部分 -->
     <div class="result">
       <img class="result__img" src="./image/sazae.png" alt="">
-      <img class="result__img-ballon" src="./image/5311-removebg-preview.png" alt="">
-      <p id="jankenresult" class="result__text"></p>
+      <div class="arrow_box">
+        <p id="jankenresultPC" class="result__text"></p>
+      </div>
     </div>
-  </section>
-  <div class="reload-btn" id="reloadBtn">
-    <a class="btn-emergency-real">
-      <span class="btn-emergency-real-bottom"></span>
-      <span class="btn-emergency-real-top"><span>リトライ</span></span>
-    </a>
+    <section class="janken-game" id="jankenGame">
+      <!-- 相手の手 -->
+      <div class="you">
+        <h1 class="me_you">あいて</h1>
+        <ul class="Hands__list">
+          <li class="Hands__list-item" id="opponent_0">ぐー</li>
+          <li class="Hands__list-item" id="opponent_1">ちょき</li>
+          <li class="Hands__list-item" id="opponent_2">ぱー</li>
+        </ul>
+        <!-- 相手の手の画像 -->
+        <ul class="Hands__img">
+          <li class="Hands__img-wrapper">
+            <img class="Hands__img-size opponent-hand__img" id="opponent_hand_img_0" src="./image/rock.png" alt="">
+          </li>
+          <li class="Hands__img-wrapper">
+            <img class="Hands__img-size opponent-hand__img" id="opponent_hand_img_1" src="./image/tyoki.png" alt="">
+          </li>
+          <li class="Hands__img-wrapper">
+            <img class="Hands__img-size opponent-hand__img" id="opponent_hand_img_2" src="./image/paper.png" alt="">
+          </li>
+        </ul>
+      </div>
+      <!-- 自分の手 -->
+      <div class="me">
+        <!-- 自分の手の画像 -->
+        <ul class="Hands__list Hands__list__player">
+          <li class="Hands__img-wrapper" onclick="ChooseHand(0)">
+            <img class="Hands__img-size" id="player_hand_img_0" src="./image/rock.png" alt="">
+          </li>
+          <li class="Hands__img-wrapper" onclick="ChooseHand(1)">
+            <img class="Hands__img-size" id="player_hand_img_1" src="./image/tyoki.png" alt="">
+          </li>
+          <li class="Hands__img-wrapper" onclick="ChooseHand(2)">
+            <img class="Hands__img-size" id="player_hand_img_2" src="./image/paper.png" alt="">
+          </li>
+        </ul>
+        <ul class="Hands__list Hands__list__player">
+          <li class="Hands__list-item" id="player_0" onclick="ChooseHand(0)">ぐーを出す</li>
+          <li class="Hands__list-item" id="player_1" onclick="ChooseHand(1)">ちょきを出す</li>
+          <li class="Hands__list-item" id="player_2" onclick="ChooseHand(2)">ぱーを出す</li>
+        </ul>
+        <h1 class="me_you">自分</h1>
+      </div>
+    </section>
+    <div class="SP__bottom">
+      <div class="reload-btn" id="reloadBtn">
+        <a class="btn-emergency-real">
+          <span class="btn-emergency-real-bottom"></span>
+          <span class="btn-emergency-real-top"><span>リトライ</span></span>
+        </a>
+      </div>
+      <div class="result__SP">
+        <p id="jankenresultSP"></p>
+      </div>
+    </div>
   </div>
-
   <script src="./janken.js"></script>
   <script src="../main.js"></script>
 </body>
