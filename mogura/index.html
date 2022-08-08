@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>事前企画サンプルコード</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <p>チーム運営</p>
+
+      <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items">
+          <li class="nav-items__item"><a href="../slideshow/index.html">🍣チーム紹介🍣</a></li>
+          <li class="nav-items__item"><a href="../janken/index.html">👾ゲーム👾</a></li>
+          <li class="nav-items__item"><a href="../mogura/index.html">👾ゲーム２👾</a></li>
+        </ul>
+      </nav>
+      
+      <button class="header__hamburger hamburger active" id="js-hamburger">
+        <img class="header__hamburger__icon" src="../hamburger_icon.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <section class="mogura_section">
+    <!-- モグラ叩き -->
+    <div id="modal" class="modal">
+      <section class="game_section">
+          <h1>Whack-A-Mole</h1>
+          <p><span style="color: pink;">■</span>+2　Point</p>
+          <p><span style="color: #6091d3;">■</span>+1　Point</p>
+          <p><span style="color: #222324;">■</span>-1　Point</p>
+          <div class="button">GAME START</div>
+      </section>
+    </div>
+    
+    <div id="main" class=" ">
+        <div id="main_header" class="hidden2">
+            <h2>START</h2>
+            <h2 class="score">SCORE: 0</h2>
+        </div>
+        <main>
+            <table></table>
+        </main>
+    </div>
+  </section>
+  <script src="../main.js"></script>
+  <script src="mogura.js"></script>
+</body>
+</html>
